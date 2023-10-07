@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>time-stamp like ZingMP3</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/ex05.css" />
+  </head>
+  <body>
+    <div class="play-btn">
+      <i class="fas fa-play"></i>
+    </div>
+    <div class="player">
+      <span>00:00</span>
+
+      <div class="progress-bar">
+        <div class="progress">
+          <span class="dot"></span>
+          <span class="timer">00:00</span>
+        </div>
+      </div>
+
+      <span>00:00</span>
+    </div>
+
+    <!-- karaoke -->
+    <div class="karaoke">
+      <button class="play">Hát Karaoke</button>
+      <div class="karaoke-inner">
+        <div class="karaoke-container">
+          <div class="karaoke-header">
+            <h2>Karaoke</h2>
+            <span class="close"><i class="fas fa-times"></i></span>
+          </div>
+
+          <!-- lyric -->
+          <div class="karaoke-content">
+            <p>
+              <span class="word">
+                Loi
+                <span>Loi</span>
+              </span>
+
+              <span class="word">
+                Bai
+                <span>Bai</span>
+              </span>
+
+              <span class="word">
+                Hat
+                <span>Hat</span>
+              </span>
+            </p>
+            <p>Loi bai hat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <audio src="mp3/10535357fa984c63ddd4e55b5eb1fa32.mp3" class="audio"></audio>
+
+    <!-- Scripts -->
+    <script src="js/ex05.js"></script>
+  </body>
+</html>

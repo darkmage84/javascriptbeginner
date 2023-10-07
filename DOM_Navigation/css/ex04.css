@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  /* overflow: hidden để bỏ hiệu ứng thanh cuộn ngang */
+}
+
+.carousel .carousel-inner {
+  display: flex;
+  /* width: 4740px; */
+  transition: translate 0.4s ease;
+}
+
+/* .carousel .carousel-inner .item {
+  width: 1580px;
+  
+width: 1580px 
+do ta đặt width của img là 100% nên bằng kích thước của 1 màn hình
+  
+} */
+
+/* .carousel .carousel-inner .item:not(.active) {
+  display: none;
+} */
+
+.carousel .carousel-nav span {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4f7070;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .carousel-nav span.prev {
+  left: 10px;
+}
+.carousel .carousel-nav span.next {
+  right: 10px;
+}

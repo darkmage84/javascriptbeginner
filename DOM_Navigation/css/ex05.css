@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+}
+
+.play-btn {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.play-btn i {
+  text-align: center;
+  width: 34px;
+  /* border: 1px solid black; */
+  /* border-radius: 50%; */
+}
+
+.player {
+  max-width: 90%;
+  margin: 0px auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  margin: 30px auto;
+  background: grey;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-bar .progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  /* width: 10%; */
+  background: red;
+}
+
+.progress-bar .progress .dot {
+  width: 13px;
+  height: 13px;
+  display: block;
+  background: blueviolet;
+  position: absolute;
+  right: 0;
+  top: -1.5px;
+  border-radius: 50%;
+  translate: 50%;
+  cursor: pointer;
+}
+
+.progress-bar .progress .timer {
+  position: absolute;
+  top: -150%;
+  left: 0;
+  translate: -50% 0px;
+  color: black;
+  font-size: 10px;
+  display: none;
+}
+
+.karaoke {
+  text-align: center;
+}
+
+.karaoke .play {
+  padding: 5px 15px;
+  background: blueviolet;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.karaoke .karaoke-inner {
+  position: fixed;
+  inset: 0;
+  background: blueviolet;
+  z-index: 100;
+  transition: top 0.4s ease;
+  top: 100%;
+}
+
+.karaoke .karaoke-inner.show {
+  top: 0;
+}
+
+.karaoke .karaoke-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.karaoke .karaoke-container .karaoke-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.karaoke .karaoke-container .karaoke-header h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.karaoke .karaoke-container .karaoke-header .close {
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.karaoke .karaoke-content {
+  font-size: 5vw;
+  font-weight: bold;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.karaoke .karaoke-content h3 {
+  font-size: 2.5rem;
+}
+
+.karaoke .karaoke-content p {
+  margin: 15px 0;
+}
+
+.karaoke .karaoke-content .word {
+  position: relative;
+  margin: 0 15px;
+}
+
+.karaoke .karaoke-content .word span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  overflow: hidden;
+  display: inline-block;
+  color: red;
+
+  /* transition: width 0.4s linear; */
+}
